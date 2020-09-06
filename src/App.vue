@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <NamePicker />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from './components/layout/Header';
+import NamePicker from './components/NamePicker';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    NamePicker
   }
 }
 </script>
@@ -23,6 +24,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background: #ff8484;
   margin-top: 60px;
+}
+body {
+    background: #ff8484;
 }
 </style>
