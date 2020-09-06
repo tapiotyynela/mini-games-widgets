@@ -8,6 +8,7 @@
 <script>
 import Header from './components/layout/Header';
 import NamePicker from './components/NamePicker';
+// main js
 export default {
   name: 'App',
   components: {
