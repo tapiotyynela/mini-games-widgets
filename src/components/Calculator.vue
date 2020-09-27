@@ -11,6 +11,7 @@
         <button class="btn" @click="doSub">-</button>
         <button class="btn" @click="doMultiply">x</button>
         <button class="btn" @click="doDivide">/</button>
+        <button class="btn" @click="reset">Reset</button>
         <p>Summa: {{ sum }}</p>
         <p>Erotus: {{ substarction }}</p>
         <p>Kerto: {{ multiply }}</p>
@@ -42,6 +43,12 @@ export default {
         },
         doDivide() {
             this.divide = parseInt(this.num1) / parseInt(this.num2)
+        },
+        reset() {
+            this.substarction = 0
+            this.multiply = 0
+            this.sum = 0
+            this.divide = 0
         }
         }
     }
