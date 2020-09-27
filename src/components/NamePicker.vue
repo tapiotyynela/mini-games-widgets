@@ -49,14 +49,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
     .btn {
         color: #ff8484;
-        background: white;
+        background:  #444;
         border-radius: 10%;
         font-family: Arial, Helvetica, sans-serif;
         border: none;
         cursor: pointer;
+        padding: 5px;
+        margin-left: 3px
     }
     .btn:hover {
         background: grey;
